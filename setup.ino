@@ -1,22 +1,6 @@
-///////////////////////////////////////////////////////////////////////////////////////
-//Terms of use
-///////////////////////////////////////////////////////////////////////////////////////
-//THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//THE SOFTWARE.
-///////////////////////////////////////////////////////////////////////////////////////
-//Safety note
-///////////////////////////////////////////////////////////////////////////////////////
-//Always remove the propellers and stay away from the motors unless you 
-//are 100% certain of what you are doing.
-///////////////////////////////////////////////////////////////////////////////////////
 
 #include <Wire.h>               //Include the Wire.h library so we can communicate with the gyro
-#include <EEPROM.h>             //Include the EEPROM.h library so we can store information onto the EEPROM
+#include <EEPROM.h>             //have to store gyro dataa to EEPROM
 
 //Declaring Global Variables
 byte last_channel_1, last_channel_2, last_channel_3, last_channel_4;
@@ -853,11 +837,8 @@ void intro(){
   Serial.println(F("      Controller"));
   delay(1000);
   Serial.println(F(""));
-  Serial.println(F("YMFC-AL Setup Program"));
+  Serial.println(F("Setup Program"));
   Serial.println(F(""));
   Serial.println(F("==================================================="));
   delay(1500);
-  Serial.println(F("For support and questions: www.brokking.net"));
-  Serial.println(F(""));
-  Serial.println(F("Have fun!"));
 }
